@@ -1,0 +1,264 @@
+/* h1 */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+/* h3 */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+/* p */
+@font-face {
+    font-family: 'KOTRA_SONGEULSSI';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/KOTRA_SONGEULSSI.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 소제목 */
+@font-face {
+    font-family: 'SDKukdetopokki-Lt';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/SDKukdetopokki-aLt00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.bx-wrapper{
+    border: 0;
+    margin: 0 auto;
+}
+
+.bx-wrapper .bx-pager{
+    text-align: right;
+    bottom: 14px;
+}
+.bx-wrapper::after{
+    content: "";
+    display: block;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,.4);
+    position: absolute;
+    top: 0; left: 0;
+}
+body{
+    color: #fff;
+    background: rgb(71, 65, 59);
+}
+footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0%; left: 0%;
+    padding-left: 5%;
+    box-sizing: border-box;
+    line-height: 60px;
+    color: #fff;
+    background: rgb(36, 31, 31);
+    box-shadow: 3px -3px 3px #333;
+    font-size: .8rem;
+}
+
+/* 헤더 */
+header{
+    width: 100%;
+    position: fixed;
+    top: 0; left: 0;
+    padding: 0 10%;
+    box-sizing: border-box;
+    z-index: 9;
+    display: flex;
+    justify-content: space-between;
+    line-height: 80px;
+    font-size: 1rem;
+    background: rgba(0,0,0,.4);
+}
+
+.gnb{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    font-family: 'Permanent Marker', cursive;
+}
+
+
+/* 슬라이드 */
+#slide{
+    position: relative;
+    background: #212529;
+    width: 100%;
+}
+#slide img{
+    height: 93.5vh;
+}
+.slide_title{
+    position: absolute;
+    top: 50%; left: 10%;
+}
+
+.slide_title h3{
+    font-size: 2rem;
+    font-family: 'Nanum Brush Script', cursive;
+}
+.slide_title h1{
+    font-size: 4rem;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 100;
+}
+.slide_title p{
+    font-size: 1rem;
+    font-family: 'KOTRA_SONGEULSSI';
+}
+
+/* 인트로 */
+#content{
+    background: rgb(71, 65, 59);
+    padding-top: 90px;
+    padding-bottom: 2px;
+}
+
+#content>h3, #menu>h3{
+    text-align: center;
+    line-height: 40px;
+    color: #dba200;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+#content>h1, #menu>h1{
+    text-align: center;
+    line-height: 50px;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family: 'SDKukdetopokki-Lt';
+    font-weight: 100;
+}
+
+#content ul{
+    width: 55%;
+    margin: 0 auto;
+    display: flex;
+}
+#content li{
+    width: 50%;
+}
+
+.reText{
+    text-align: center;
+    padding-top: 10%;
+    box-sizing: border-box;
+    font-family: 'KOTRA_SONGEULSSI';
+}
+.reText1{
+    background:rgb(36, 31, 31);
+}
+.reText2{
+    background: rgb(58, 55, 51);
+}
+
+.reText h3{
+    font-size: 1.3rem;
+}
+
+/* 메뉴 */
+#menu{
+    background: url(https://cdn.pixabay.com/photo/2018/12/14/05/08/light-3874246_960_720.jpg);
+    background-size: cover;
+    position: center center;
+    padding-top: 90px;
+    padding-bottom: 110px;
+    height: calc(72.3vh);
+}
+
+#menu ul{
+    width: 55%;
+    margin: 0 auto;
+    /* margin-top: 50px; */
+}
+#menu li{
+    display: flex;
+    justify-content: space-between;
+    line-height: 40px;
+    background: rgb(58, 55, 51);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    font-family: 'KOTRA_SONGEULSSI';
+}
+#menu li:nth-child(even){
+    background: rgb(36, 31, 31);
+}
+
+/* 문의하기 */
+#contact{
+    background: rgb(71, 65, 59);
+    padding-top: 200px;
+    padding-bottom: 110px;
+}
+
+#contact ul{
+    width: 55%;
+    margin: 0 auto;
+    display: flex;
+}
+#contact li{
+    width: 50%;
+}
+#contact h3{
+    font-size: 2rem;
+    line-height: 80px;
+    font-family: 'SDKukdetopokki-Lt';
+    font-weight: 100;
+}
+#contact p{
+    line-height: 32px;
+    font-family: 'KOTRA_SONGEULSSI';
+}
+
+/* 갤러리 */
+#gallery{
+    padding-top: 100px;
+}
+#gallery ul{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+#gallery li{
+    width: 30%;
+    position: relative;
+}
+#gallery li:after{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:100%;    
+    background:rgba(0,0,0,.6);
+    position: absolute;
+    top:0; left:0;
+    transition: .6s;
+    font-family: 'KOTRA_SONGEULSSI';
+    opacity: 0;
+}
+#gallery li:hover:after{
+    opacity: 1;
+}
+
+#gallery ul:nth-child(2){
+    padding-top: 50px;
+}
+
+.gallery1 li:nth-child(1)::after{
+    content: "블랙라벨 안심 스테이크 세트";
+}
+.gallery1 li:nth-child(2)::after{
+    content: "명장의 맛 티본 스테이크";
+}
+.gallery1 li:nth-child(3)::after{
+    content: "블랙라벨 등심 스테이크 세트";
+}
+.gallery2 li:nth-child(1)::after{
+    content: "명장의 맛 찹 스테이크";
+}
+.gallery2 li:nth-child(2)::after{
+    content: "부채살 스테이크 밀키트";
+}
+.gallery2 li:nth-child(3)::after{
+    content: "명장의 맛 티본 스테이크";
+}
